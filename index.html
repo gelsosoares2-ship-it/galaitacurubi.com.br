@@ -83,6 +83,10 @@ p { margin: 0; }
   .item:nth-child(n+2)::after { content: ""; top: 0; left: -22px; right: -22px; height: 1px; }
 }
 
+.breve { border: 1px solid var(--gold); border-radius: 8px; padding: 26px 28px; display: grid; gap: 12px; justify-items: start; background: rgba(201,160,78,0.06); }
+.breve-t { font-family: var(--display); font-weight: 600; font-size: 1.2rem; line-height: 1.45; max-width: 52ch; text-wrap: balance; }
+@media (max-width: 460px) { .breve { padding: 22px 18px; } .breve .btn { white-space: normal; text-align: center; } }
+
 /* aluzinco */
 .destaque .wrap { padding-block: 72px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 40px; align-items: center; }
 .destaque .txt { display: grid; gap: 16px; min-width: 0; }
@@ -201,6 +205,11 @@ footer .wrap span:last-child { letter-spacing: 0.18em; text-transform: uppercase
         <h3>Telhas de aluzinco</h3>
         <p>Sob encomenda. <a href="#aluzinco">Saiba mais</a></p>
       </div>
+    </div>
+    <div class="breve">
+      <p class="label">Estamos só começando</p>
+      <p class="breve-t">A GALA acabou de nascer, e a nossa linha de materiais de construção e ferragens vai crescer. Em breve, mais produtos e novidades por aqui.</p>
+      <a class="btn vazio" href="https://www.instagram.com/gala.materias/" target="_blank" rel="noopener">Acompanhe no Instagram @gala.materias</a>
     </div>
   </div>
 </section>
